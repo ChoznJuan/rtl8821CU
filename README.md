@@ -15,7 +15,7 @@ To make use of the DKMS feature with this project, do the following:
     DRV_NAME=rtl8821CU
     DRV_VERSION=5.8.1
     sudo mkdir /usr/src/${DRV_NAME}-${DRV_VERSION}
-    git archive master | sudo tar -x -C /usr/src/${DRV_NAME}-${DRV_VERSION}
+    git archive 5.8.1 | sudo tar -x -C /usr/src/${DRV_NAME}-${DRV_VERSION}
     sudo dkms add -m ${DRV_NAME} -v ${DRV_VERSION}
     sudo dkms build -m ${DRV_NAME} -v ${DRV_VERSION}
     sudo dkms install -m ${DRV_NAME} -v ${DRV_VERSION}
